@@ -37,6 +37,12 @@ let notes = [
     date: "2022-01-10T19:20:14.298Z",
     important: true,
   },
+  {
+    id: 4,
+    content: "New note",
+    date: "2022-01-10T19:20:14.298Z",
+    important: false,
+  },
 ];
 
 app.get("/", (req, res) => {
