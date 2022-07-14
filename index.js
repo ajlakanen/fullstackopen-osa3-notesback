@@ -14,6 +14,8 @@ const requestLogger = (request, response, next) => {
   next();
 };
 
+// asdf
+
 app.use(requestLogger);
 
 let notes = [
