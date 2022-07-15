@@ -15,7 +15,7 @@ const requestLogger = (request, response, next) => {
   next();
 };
 
-// asdf
+// asdfa
 
 app.use(requestLogger);
 
@@ -47,7 +47,7 @@ let notes = [
 ];
 
 app.get("/", (req, res) => {
-  res.send("<h1>Hello Worldss!</h1>");
+  res.send("<h1>Hello World!</h1>");
 });
 
 app.get("/api/notes", (req, res) => {

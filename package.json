@@ -6,7 +6,12 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "powershell Remove-Item -r -fo build;cd ../../2022-fso-osa3/notesfrontend/;npm run build;cp -r build ../../2022-fso-osa3-notesback/notesbackend",
+    "build:ui2": "powershell ls",
+    "deploy": "git push heroku main",
+    "deploy:full": "npm run build:ui ; git add . ; git commit -m uibuild ; git push && npm run deploy",
+    "logs:prod": "heroku logs --tail"
   },
   "author": "Antti-Jussi Lakanen",
   "license": "MIT",
